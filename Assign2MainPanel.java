@@ -12,11 +12,16 @@ public class Assign2MainPanel extends JPanel{
 	JButton jeffButton;
 	JButton joshButton;
 	JButton wyattButton;
+	JLabel nameText;
+	JLabel edText;
+	JLabel jobText;
+	ImageIcon profilePic;
+	JLabel Image;
 
 	public Assign2MainPanel()
 	{
 		setBackground(Color.cyan);
-		setPreferredSize(new Dimension(500, 500));
+		setPreferredSize(new Dimension(800, 600));
 
 		companyTitle = new JLabel("EWP");
 		companyName = new JLabel("Engorged Wicket Pandoras");
@@ -37,10 +42,22 @@ public class Assign2MainPanel extends JPanel{
 		joshButton.addActionListener(new joshListener());
 		wyattButton.addActionListener(new wyattListener());
 
+		nameText = new JLabel("");
+		edText = new JLabel("");
+		jobText = new JLabel("");
+
+		ImageIcon profilePic = new ImageIcon("computer.gif");
+		Image = new JLabel(profilePic);
+
 		add(courtneyButton);
 		add(jeffButton);
 		add(joshButton);
 		add(wyattButton);
+		add(Image);
+		add(nameText);
+		add(edText);
+		add(jobText);
+
 	}
 
 	private class courtneyListener implements ActionListener
@@ -48,6 +65,11 @@ public class Assign2MainPanel extends JPanel{
 		public void actionPerformed (ActionEvent event)
         {
 					System.out.println("Courtney");
+					profilePic = new ImageIcon("cna.gif");
+					Image.setIcon(profilePic);
+					nameText.setText("NAME: Courtney Appel");
+					edText.setText("EDUCATION: 3rd year");
+					jobText.setText("JOB: Compter Science Department");
 				}
 	}
 
@@ -56,6 +78,11 @@ public class Assign2MainPanel extends JPanel{
 		public void actionPerformed (ActionEvent event)
         {
 					System.out.println("Jeff");
+					profilePic = new ImageIcon("jeff.gif");
+					Image.setIcon(profilePic);
+					nameText.setText("NAME: Jeff");
+					edText.setText("EDUCATION: ");
+					jobText.setText("JOB: ");
 				}
 	}
 
@@ -64,6 +91,11 @@ public class Assign2MainPanel extends JPanel{
 		public void actionPerformed (ActionEvent event)
         {
 					System.out.println("Josh");
+					profilePic = new ImageIcon("josh.gif");
+					Image.setIcon(profilePic);
+					nameText.setText("NAME: Josh");
+					edText.setText("EDUCATION: ");
+					jobText.setText("JOB: ");
 				}
 	}
 
@@ -72,6 +104,11 @@ public class Assign2MainPanel extends JPanel{
 		public void actionPerformed (ActionEvent event)
         {
 					System.out.println("Wyatt");
+					profilePic = new ImageIcon("wyatt.gif");
+					Image.setIcon(profilePic);
+					nameText.setText("NAME: Wyatt");
+					edText.setText("EDUCATION: ");
+					jobText.setText("JOB: ");
 				}
 	}
 
