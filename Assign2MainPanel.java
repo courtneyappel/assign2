@@ -7,7 +7,7 @@ public class Assign2MainPanel extends JPanel{
 
 	JLabel companyTitle;
 	JLabel companyName;
-
+	JButton mainButton;
 	JButton courtneyButton;
 	JButton jeffButton;
 	JButton joshButton;
@@ -27,6 +27,7 @@ public class Assign2MainPanel extends JPanel{
 		add(companyTitle);
 		add(companyName);
 
+		mainButton = new JButton("Main Menu");
 		courtneyButton = new JButton("Courtney");
 		jeffButton = new JButton("Jeff");
 		joshButton = new JButton("Josh");
@@ -36,11 +37,15 @@ public class Assign2MainPanel extends JPanel{
 		jeffButton.addActionListener(new jeffListener());
 		joshButton.addActionListener(new joshListener());
 		wyattButton.addActionListener(new wyattListener());
+		mainButton.addActionListener(new mainButtonListener());
+
+		mainButton.setVisible(false);
 
 		add(courtneyButton);
 		add(jeffButton);
 		add(joshButton);
 		add(wyattButton);
+		add(mainButton);
 	}
 
 	private class courtneyListener implements ActionListener
@@ -64,7 +69,26 @@ public class Assign2MainPanel extends JPanel{
 		public void actionPerformed (ActionEvent event)
         {
 					System.out.println("Josh");
+					companyName.setVisible(false);
+					companyTitle.setVisible(false);
+					joshButton.setVisible(false);
+					courtneyButton.setVisible(false);
+					jeffButton.setVisible(false);
+					wyattButton.setVisible(false);
+					mainButton.setVisible(true);
 				}
+	}
+
+	private class mainButtonListener implements ActionListener{
+		public void actionPerformed (ActionEvent event){
+			companyName.setVisible(true);
+			companyTitle.setVisible(true);
+			joshButton.setVisible(true);
+			courtneyButton.setVisible(true);
+			jeffButton.setVisible(true);
+			wyattButton.setVisible(true);
+			mainButton.setVisible(false);
+		}
 	}
 
 	private class wyattListener implements ActionListener
