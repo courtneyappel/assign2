@@ -107,8 +107,8 @@ public class Assign2MainPanel extends JPanel{
 					profilePic = new ImageIcon("wyatt.gif");
 					Image.setIcon(profilePic);
 					nameText.setText("NAME: Wyatt");
-					edText.setText("EDUCATION: ");
-					jobText.setText("JOB: ");
+					edText.setText("EDUCATION: Trying");
+					jobText.setText("JOB: Senior Manager at Chuck E Cheese");
 				}
 	}
 
