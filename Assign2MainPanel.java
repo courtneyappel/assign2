@@ -64,7 +64,6 @@ public class Assign2MainPanel extends JPanel{
 	{
 		public void actionPerformed (ActionEvent event)
         {
-					System.out.println("Courtney");
 					profilePic = new ImageIcon("cna.gif");
 					Image.setIcon(profilePic);
 					nameText.setText("NAME: Courtney Appel");
@@ -77,12 +76,11 @@ public class Assign2MainPanel extends JPanel{
 	{
 		public void actionPerformed (ActionEvent event)
         {
-					System.out.println("Jeff");
 					profilePic = new ImageIcon("jeff.gif");
 					Image.setIcon(profilePic);
-					nameText.setText("NAME: Jeff");
-					edText.setText("EDUCATION: ");
-					jobText.setText("JOB: ");
+					nameText.setText("NAME: Jeff Bagley");
+					edText.setText("EDUCATION: 3rd year");
+					jobText.setText("JOB: Killing the Software Science Game");
 				}
 	}
 
@@ -90,7 +88,6 @@ public class Assign2MainPanel extends JPanel{
 	{
 		public void actionPerformed (ActionEvent event)
         {
-					System.out.println("Josh");
 					profilePic = new ImageIcon("josh.gif");
 					Image.setIcon(profilePic);
 					nameText.setText("NAME: Josh Tiefenthaler");
@@ -103,7 +100,6 @@ public class Assign2MainPanel extends JPanel{
 	{
 		public void actionPerformed (ActionEvent event)
         {
-					System.out.println("Wyatt");
 					profilePic = new ImageIcon("wyatt.gif");
 					Image.setIcon(profilePic);
 					nameText.setText("NAME: Wyatt");
