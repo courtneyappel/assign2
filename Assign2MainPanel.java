@@ -21,7 +21,7 @@ public class Assign2MainPanel extends JPanel{
 	public Assign2MainPanel()
 	{
 		setBackground(Color.cyan);
-		setPreferredSize(new Dimension(800, 600));
+		setPreferredSize(new Dimension(900, 700));
 
 		companyTitle = new JLabel("EWP");
 		companyName = new JLabel("Engorged Wicket Pandoras");
@@ -93,9 +93,9 @@ public class Assign2MainPanel extends JPanel{
 					System.out.println("Josh");
 					profilePic = new ImageIcon("josh.gif");
 					Image.setIcon(profilePic);
-					nameText.setText("NAME: Josh");
-					edText.setText("EDUCATION: ");
-					jobText.setText("JOB: ");
+					nameText.setText("NAME: Josh Tiefenthaler");
+					edText.setText("EDUCATION: 4th year");
+					jobText.setText("JOB: Programmer guy. ");
 				}
 	}
 
