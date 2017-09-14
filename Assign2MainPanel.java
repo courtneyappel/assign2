@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 public class Assign2MainPanel extends JPanel{
 
 	JLabel companyTitle;
@@ -71,8 +72,43 @@ public class Assign2MainPanel extends JPanel{
 	{
 		public void actionPerformed (ActionEvent event)
         {
-					System.out.println("Wyatt");
+					wyattInfo info = new wyattInfo();
+
+					JFrame myFrame = new JFrame();
+					myFrame.getContentPane().add(new wyattInfo());
+					myFrame.pack();
+					myFrame.setVisible(true);
+					wyattButton.setVisible(false);
 				}
+	}
+
+	public class wyattInfo extends JPanel{
+		JLabel text;
+		JLabel info;
+		JLabel about;
+		public wyattInfo(){
+			setBackground(Color.orange);
+			setPreferredSize(new Dimension(350, 250));
+
+			text = new JLabel("Wyatt -");
+			info = new JLabel("About Me");
+			about = new JLabel("<html>"+
+			"Right now I am just typing to take up space"+
+			"<br> I need to fill out room to test how"+
+			"<br>long I can type so I can also"+
+			"<br>plan things as well as getting the wrap"+
+			"<br> text to work"+
+			"<br> test line 1"+
+			"<br> test line 2"+
+			"<br> test line 3"+
+			"</html>");
+			text.setFont(companyName.getFont().deriveFont(32f));
+			info.setFont(companyName.getFont().deriveFont(24f));
+			about.setFont(companyName.getFont().deriveFont(16f));
+			add(text);
+			add(info);
+			add(about);
+		}
 	}
 
 }
